@@ -1,112 +1,13 @@
 ---
 layout: page
-title: Jekyll快速开始
+title: I'm NIX
 tagline: 
 ---
 {% include JB/setup %}
 
 开始使用Jekyll+Markdown+git+GitHub写博客。
 
-Jekyll快速开始
-
-快速通过GitHub Pages安装博客并发布。然后在本地运行你的博客并创建你的第一个Post和页面。
-
-##安装Jekyll-Bootsrap
-
-[安装Jekyll-Bootsrap](http://jekyllbootstrap.com/index.html#start-now)，如果你还没安装好。Jekyll-Bootsrap是一个博客框架，拥有内建的主题、分析、评论以及Post/Page建立功能。
-
-	$ gem install jekyll
-
-如果安装出了问题，请看看原始的[Jekyll安装文档](https://github.com/mojombo/jekyll/wiki/Install)。你也可以通过GitHub Issues来[创建一个支持issue](https://github.com/plusjade/jekyll-bootstrap/issues)。
-
-一旦这个gem安装好，你就可以转到你的Jekyll-Bootsrap安装目录。如果你一直跟着首页的说明来做，此目录将是：`USERNAME.github.com`。进入此目录后，你就可以运行有服务器支持的jekyll：
-
-	cd USENAME.github.com
-	jekyll --server
-	# 记得将USENAME改为你自己的GitHub用户名
-
-## 新建一篇博文（Post）
-
-你可以轻易地通过一个rake任务来新建博文：
-
-	$ rake post title="Hello World"
-
-此rake任务会自动创建一个有着正确的格式化好文件名的文件和一个YAML Front Matter。确保指定一个你自己的标题。缺省日期是当前日期。
-	
-	# 根据我的测试，写上日期才不会报错
-	$ rake post title="Hi, Jekyll" date="2012-03-04"
-
-此rake任务不会覆盖任何已存在的博文，除非你让它那样做。
-
-## 新建一个页面（Page）
-
-新建页面也是通过rake任务，同样很容易：
-
-	$ rake page name="about.md"
-
-新建一个嵌套页面：
-
-	$ rake page name="pages/about.md"
-
-新建一个有着**好看**路径的页面：
-
-	$ rake page name="pages/about"
-	# 这会建立一个文件： ./pages/about/index.html
-	
-此rake任务会自动创建一个有着正确的格式化好文件名的文件和一个YAML Front Matter，同时包含Jekyll Bootstrap的设置文件。
-
-###Jekyll-Bootstrap页面样例
-
-Jekyll-Bootstrap同样提供了许多预配置好页面样例提供用户参考。你可以学习它们的代码然后按照你需要的样子定制。
-
-* [页面](http://jekyllbootstrap.com/pages.html)
-* [分类](http://jekyllbootstrap.com/categories.html)
-* [归档](http://jekyllbootstrap.com/archive.html)
-* [标签](http://jekyllbootstrap.com/tags.html)
-
-##发布
-
-在你添加了一些博文或改了主题等其它文件后，简单地提交它们到你的git仓库并push到GitHub上。
-
-	$ git add .
-	$ git commit -m "添加了新内容"
-	$ git push origin master
-
-##定制
-
-Jekyll-Bootstrap是一个基本的博客平台。有许多方式可以深入定制它。下列就是Jekyll-Bootstrap更深入的定制技术：
-
-###主题
-Jekyll-Bootstrap支持模块化主题。多个主题可以同时存在，且能根据需要关闭或打开。编辑、配置以及建立主题的方法在文档的[主题](http://jekyllbootstrap.com/usage/jekyll-theming.html)一节。
-
-###博客配置
-
-Jekyll和Jekyll-Bootstrap有一个简单但强大的[Jekyll配置系统](http://jekyllbootstrap.com/usage/blog-configuration.html)。你可以：
-
-* 为博文指定一个自定义的链接格式
-* 为博客指定一个评论系统，如disqus、intensedebate、livefyre或者自定义
-* 为博客指定一个分析引擎，如google、getclicky或者自定义
-
-###编程接口
-
-API页面文档里主要的数据结构和代码都可以用于Jekyll和Jekyll-Bootstrap。查看这些页面以知晓如何使用以及何处使用这些数据的代码。
-
-###Jekyll介绍
-
-`强烈推荐`  
-如果你计划定制你的博客，我强烈推荐你阅读[Jekyll介绍](http://jekyllbootstrap.com/lessons/jekyll-introduction.html)。此介绍说明了如何以及为何Jekyll按照它工作的方式工作。This will provide you with the proper context, knowledge-base, and fundamentals necessary to understand and be efficient in working with Jekyll and Jekyll-Bootstrap.
-
-
-
-
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+###Here's a sample "posts list".
 
 <ul class="posts">
   {% for post in site.posts %}
